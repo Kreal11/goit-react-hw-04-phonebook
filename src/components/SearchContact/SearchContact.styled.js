@@ -5,6 +5,7 @@ export const StyledSearchWrapper = styled.div`
   display: flex;
   flex-direction: column;
   gap: 8px;
+  margin-bottom: 25px;
 `;
 
 export const StyledContactsHeader = styled.h2`
