@@ -7,6 +7,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url('../images/bg-image-2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(5px);
 }
 
 code {
@@ -123,7 +127,6 @@ body {
   line-height: 1.29;
   letter-spacing: -0.56px;
   color: var(--color-black);
-  background: var(--color-body-bg);
 }
 ol,
 ul {
