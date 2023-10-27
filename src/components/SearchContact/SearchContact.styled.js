@@ -43,8 +43,8 @@ export const StyledSearchInput = styled.input`
   caret-color: rgb(255, 81, 0);
   background-color: rgb(255, 255, 255);
   border-radius: 30px;
-  padding-left: 35px;
+  padding-left: 10px;
   letter-spacing: 0.8px;
   color: rgb(19, 19, 19);
-  font-size: 13.4px;
+  font-size: 15.3px;
 `;
