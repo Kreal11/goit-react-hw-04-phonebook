@@ -3,6 +3,7 @@ import {
   StyledSearchLabel,
   StyledContactsHeader,
   StyledSearchInput,
+  StyledInputSearchWrapper,
 } from './SearchContact.styled';
 import PropTypes from 'prop-types';
 
@@ -13,13 +14,15 @@ export const SearchContacts = ({ changeFilter, name }) => {
       <StyledSearchLabel htmlFor="filter">
         Find contacts by name👇
       </StyledSearchLabel>
-      <StyledSearchInput
-        id="filter"
-        type="text"
-        name="name"
-        value={name}
-        onChange={changeFilter}
-      />
+      <StyledInputSearchWrapper>
+        <StyledSearchInput
+          id="filter"
+          type="text"
+          name="name"
+          value={name}
+          onChange={changeFilter}
+        />
+      </StyledInputSearchWrapper>
     </StyledSearchWrapper>
   );
 };

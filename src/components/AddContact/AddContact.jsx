@@ -3,6 +3,7 @@ import {
   StyledAddContactForm,
   StyledAddContactLabel,
   StyledAddContactButton,
+  StyledAddContactInputWrapper,
 } from './AddContact.styled';
 import PropTypes from 'prop-types';
 import { useState } from 'react';
@@ -41,26 +42,30 @@ export const AddContact = ({ addContact }) => {
     <div>
       <StyledAddContactForm onSubmit={handleSubmit}>
         <StyledAddContactLabel htmlFor="addName">Name</StyledAddContactLabel>
-        <StyledAddContactInput
-          type="text"
-          value={name}
-          name="name"
-          id="addName"
-          onChange={handleOnChangeInput}
-          required
-        />
+        <StyledAddContactInputWrapper>
+          <StyledAddContactInput
+            type="text"
+            value={name}
+            name="name"
+            id="addName"
+            onChange={handleOnChangeInput}
+            required
+          />
+        </StyledAddContactInputWrapper>
         <StyledAddContactLabel htmlFor="addNumber">
           Number
         </StyledAddContactLabel>
-        <StyledAddContactInput
-          type="tel"
-          value={number}
-          name="number"
-          id="addNumber"
-          onChange={handleOnChangeInput}
-          placeholder="000-00-00"
-          required
-        />
+        <StyledAddContactInputWrapper>
+          <StyledAddContactInput
+            type="tel"
+            value={number}
+            name="number"
+            id="addNumber"
+            onChange={handleOnChangeInput}
+            placeholder="000-00-00"
+            required
+          />
+        </StyledAddContactInputWrapper>
         <StyledAddContactButton
           disabled={!name || !name.trim() || !number || !number.trim()}
         >
