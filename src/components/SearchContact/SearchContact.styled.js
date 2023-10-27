@@ -4,7 +4,7 @@ export const StyledSearchWrapper = styled.div`
   margin-top: 15px;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 8px;
 `;
 
 export const StyledContactsHeader = styled.h2`

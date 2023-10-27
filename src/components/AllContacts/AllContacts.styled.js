@@ -1,7 +1,7 @@
 const { default: styled } = require('styled-components');
 
 export const StyledAllContactsUl = styled.ul`
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 30px;
   font-size: 20px;
   display: grid;

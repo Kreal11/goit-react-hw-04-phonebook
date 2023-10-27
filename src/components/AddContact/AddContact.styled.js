@@ -4,7 +4,8 @@ export const StyledAddContactForm = styled.form`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 8px;
+  margin-bottom: 50px;
 `;
 
 export const StyledAddContactLabel = styled.label`
@@ -12,7 +13,7 @@ export const StyledAddContactLabel = styled.label`
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   letter-spacing: 2px;
   line-height: 1.2;
-  font-size: 25px;
+  font-size: 20px;
 `;
 
 export const StyledAddContactInputWrapper = styled.div`
