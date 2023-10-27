@@ -125,7 +125,7 @@ export const App = () => {
         color: '#010101',
       }}
     >
-      <h1>PHONEBOOK</h1>
+      <StyledHeaderH1>PHONEBOOK</StyledHeaderH1>
       <div>
         <AddContact addContact={handleAddNewContact} />
 
@@ -147,4 +147,13 @@ const StyledPlug = styled.p`
   text-align: center;
   margin-top: 30px;
   font-size: 18px;
+`;
+
+const StyledHeaderH1 = styled.h1`
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  letter-spacing: 2px;
+  line-height: 1.2;
+  margin-bottom: 10px;
 `;
