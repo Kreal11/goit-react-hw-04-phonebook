@@ -51,11 +51,11 @@ export const StyledAddContactButton = styled.button`
   padding: 10px;
   margin: 0 auto;
   border: none;
-  color: #fff;
+  color: #333333;
   background-image: ${props =>
     props.disabled
       ? 'linear-gradient(30deg, gray, #333333)'
-      : 'linear-gradient(to bottom,rgb(227, 213, 255),rgb(255, 231, 231))'};
+      : 'linear-gradient(to bottom,rgb(255, 192, 203),rgb(230, 235, 290))'};
   border-radius: 20px;
   background-size: 100% auto;
   font-family: inherit;
