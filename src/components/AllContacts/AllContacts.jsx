@@ -1,27 +1,23 @@
 import { OneContact } from 'components/OneContact/OneContact';
-import { Component } from 'react';
+
 import { StyledAllContactsUl } from './AllContacts.styled';
 import PropTypes from 'prop-types';
 
-export class AllContacts extends Component {
-  render() {
-    const { deleteContact, dataContacts } = this.props;
-
-    return (
-      <StyledAllContactsUl>
-        {dataContacts?.map(contact => {
-          return (
-            <OneContact
-              key={contact.id}
-              {...contact}
-              deleteContact={deleteContact}
-            />
-          );
-        })}
-      </StyledAllContactsUl>
-    );
-  }
-}
+export const AllContacts = ({ deleteContact, dataContacts }) => {
+  return (
+    <StyledAllContactsUl>
+      {dataContacts?.map(contact => {
+        return (
+          <OneContact
+            key={contact.id}
+            {...contact}
+            deleteContact={deleteContact}
+          />
+        );
+      })}
+    </StyledAllContactsUl>
+  );
+};
 
 AllContacts.propTypes = {
   deleteContact: PropTypes.func.isRequired,
