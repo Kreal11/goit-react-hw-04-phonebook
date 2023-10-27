@@ -18,7 +18,7 @@ export const OneContactDeleteButton = styled.button`
   max-width: 150px;
   padding: 5px 10px;
   margin: auto auto 0 auto;
-  background: linear-gradient(to bottom, #ff5733, #f08080);
+  background: linear-gradient(to bottom, #9400d3, #f08080);
   color: #fff;
   border-radius: 10px;
   border: none;
