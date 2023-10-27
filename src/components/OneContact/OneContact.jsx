@@ -1,15 +1,18 @@
-import { OneContactDeleteButton } from './OneContact.styled';
+import {
+  OneContactDeleteButton,
+  StyledOneContactLi,
+} from './OneContact.styled';
 import PropTypes from 'prop-types';
 
 export const OneContact = ({ id, name, number, deleteContact }) => {
   return (
-    <li>
+    <StyledOneContactLi>
       <p>{name}:</p>
       <p>{number}</p>
       <OneContactDeleteButton type="button" onClick={() => deleteContact(id)}>
         Delete contact
       </OneContactDeleteButton>
-    </li>
+    </StyledOneContactLi>
   );
 };
 

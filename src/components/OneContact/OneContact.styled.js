@@ -1,5 +1,11 @@
 import styled from 'styled-components';
 
+export const StyledOneContactLi = styled.li`
+  background-color: lightgray;
+  border-radius: 5%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+`;
+
 export const OneContactDeleteButton = styled.button`
   max-width: 150px;
   padding: 5px 10px;
