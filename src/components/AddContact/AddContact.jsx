@@ -10,10 +10,6 @@ import { useState } from 'react';
 import { toast } from 'react-toastify';
 
 export const AddContact = ({ addContact }) => {
-  // state = {
-  //   name: '',
-  //   number: '',
-  // };
   const [name, setName] = useState('');
   const [number, setNumber] = useState('');
 
